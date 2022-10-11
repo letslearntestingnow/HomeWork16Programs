@@ -34,6 +34,7 @@ public class EmployeeSalary
         System.out.println("PF: " + employeeSalary.getPF(dEmpBasicSal));
         System.out.println("Gross Salary: " + dGrossSal);
 
+        scannerObj.close();
     }
 
     //Calculate HRA

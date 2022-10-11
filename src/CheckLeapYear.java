@@ -19,16 +19,13 @@ public class CheckLeapYear
 
         if (bLeapYear) { System.out.println("Yes, it is a leap year."); }
         else { System.out.println("No, it is not a leap year."); }
+
+        scannerObj.close();
     }
 
     static boolean checkLeapYear(int iYear)
     {
-        boolean bLeapYear;
-
         // if the year, divided by 4, results in remainder of 0 then it is a leap year
-        if (iYear %4 == 0) { bLeapYear = true; }
-        else { bLeapYear = false; }
-
-        return bLeapYear;
+        return iYear % 4 == 0;
     }
 }

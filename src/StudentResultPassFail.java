@@ -61,6 +61,8 @@ public class StudentResultPassFail
         System.out.println(strStudentName + " has been awarded the grade: " + studentResultObj.Grading(iPercentage));
         if (bPass) { System.out.println(strStudentName + " has Passed all the subjects.");}
         else { System.out.println(strStudentName + " has Failed in at least one subject."); }
+
+        scannerObj.close();
     }
 
     public int TotalMarks(int iMarksEnglish, int iMarksMaths, int iMarksScience)
@@ -84,7 +86,6 @@ public class StudentResultPassFail
 
     public boolean isPass(int iMarksEnglish, int iMarksMaths, int iMarksScience)
     {
-        if (iMarksEnglish < 35 || iMarksMaths < 35 || iMarksScience < 35) return false;
-        return true;
+        return iMarksEnglish >= 35 && iMarksMaths >= 35 && iMarksScience >= 35;
     }
 }

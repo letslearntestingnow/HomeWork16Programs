@@ -22,5 +22,7 @@ public class InterchangeNumbers
         // Print output
         System.out.println("The value of the first number after swap is: " + iFirstNumber);
         System.out.println("The value of the second number after swap is: " + iSecondNumber);
+
+        scannerObj.close();
     }
 }

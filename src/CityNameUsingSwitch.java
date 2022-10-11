@@ -11,7 +11,8 @@ public class CityNameUsingSwitch
         System.out.println("Enter an alphabet between a and f : ");
         char cAlphabet = scannerObj.next().charAt(0);
 
-        switch (cAlphabet) {
+        switch (cAlphabet)
+        {
             case 'a', 'A' -> System.out.println("\nAhmedabad");
             case 'b', 'B' -> System.out.println("\nBengaluru");
             case 'c', 'C' -> System.out.println("\nCochin");
@@ -21,5 +22,6 @@ public class CityNameUsingSwitch
             default -> System.out.println("\nInvalid entry");
         }
 
+        scannerObj.close();
     }
 }

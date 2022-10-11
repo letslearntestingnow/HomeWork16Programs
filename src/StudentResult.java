@@ -57,6 +57,8 @@ public class StudentResult
         System.out.println("Total marks for " + strStudentName + " are: " + iMarksTotal);
         System.out.println("Percentage for "+ strStudentName + " is: " + iPercentage);
         System.out.println(strStudentName + " has been awarded the grade: " + studentResultObj.Grading(iPercentage));
+
+        scannerObj.close();
     }
 
     public int TotalMarks(int iMarksEnglish, int iMarksMaths, int iMarksScience)
