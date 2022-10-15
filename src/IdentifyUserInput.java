@@ -6,15 +6,25 @@ public class IdentifyUserInput
     {
         Scanner scannerObj = new Scanner(System.in);
 
-        // Get input
-        System.out.print("\nEnter a character: ");
-        char cUserInput = scannerObj.next().charAt(0);
+        System.out.println("\n");
+        
+        // Get Input
+        System.out.print("Enter a character: ");
+        char cUserinput = scannerObj.next().charAt(0);
 
-        System.out.print("\n");
+        System.out.println("\n");
 
-        if (Character.isDigit(cUserInput)) { System.out.print("User entered character is a number"); }
-        else if (Character.isLetter(cUserInput)) { System.out.print("User entered character is a letter"); }
-        else { System.out.print("User entered character is a Symbol"); }
+        if(Character.isDigit(cUserinput))
+        {
+            System.out.println("User entered character is a number.");
+        } else if (Character.isLetter(cUserinput))
+        {
+            System.out.println("User entered character is a letter.");
+        }
+        else
+        {
+            System.out.println("User entered character is a Symbol.");
+        }
 
         scannerObj.close();
     }
