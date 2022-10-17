@@ -15,6 +15,8 @@ public class ChangeCase
         else { cTextInput = Character.toLowerCase(cTextInput); }
         System.out.println("The alphabet after conversion of case is: " + cTextInput);
 
+        System.out.println("The alphabet after conversion of case is: " + cTextInput);
+
         scannerObj.close();
     }
 }
